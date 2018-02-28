@@ -1,14 +1,19 @@
+body {
+    background-color: lightgrey;
+}
+
 .cards {
     margin: 0;
     padding: 0;
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 0px;
+    grid-gap: 0;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
 }
 .cards li {
-    background-color: #f2f7fc;
+    background-color: white;
  /*   border: 1px none #d0bfff; */
     padding: 10px;
     border-radius: 5px;
@@ -48,7 +53,8 @@
 
 img.cover {
      width: 100%;
-     max-height: 900px;
+     height: 100%;
+     max-height: 450px;
 } 
 
 img.logo {
@@ -89,6 +95,8 @@ img.project {
 .container {
     padding-left: 10px;
     padding-right: 10px; 
+    background-color: white;
+
 }
 
 .main {
@@ -101,7 +109,7 @@ img.project {
 @media screen and (min-width: 1050px) {
 
     .container {
-        max-width: 1150px;
+        max-width:80%;
         margin: auto;
     }
     .card1 {
