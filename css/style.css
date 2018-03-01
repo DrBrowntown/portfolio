@@ -1,5 +1,5 @@
 body {
-    background-color: lightgrey;
+    background-color: white;
 }
 
 .cards {
@@ -74,7 +74,7 @@ img.project {
 }
 
 .header {
-    text-align: right;
+    text-align: left;
     height: auto;
     font-size: 250%;
     word-wrap: break-word;
@@ -83,7 +83,7 @@ img.project {
 }  
 
 .sub-header {
-    text-align: right;
+    text-align: left;
     height: auto;
     font-size: 100%;
     word-wrap: break-word;
@@ -159,11 +159,14 @@ img.project {
 }
 
 
+
+
+
 /*Scale page to larger screen*/
 @media screen and (min-width: 1050px) {
 
     .container {
-        max-width:900px;
+        max-width:1000px;
         margin: auto;
     }
     .card1 {
