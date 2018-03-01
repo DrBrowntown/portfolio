@@ -91,7 +91,6 @@ img.project {
 }
 
 
-
 .container {
     padding-left: 10px;
     padding-right: 10px; 
@@ -105,11 +104,66 @@ img.project {
     
 }
 
- 
+/* Pop */
+@-webkit-keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+@keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+.hvr-pop {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-pop:active, .hvr-pop:focus, .hvr-pop:active, .hvr-pop:hover {
+  -webkit-animation-name: hvr-pop;
+  animation-name: hvr-pop;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+
+
+/*Icon fade in*/
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    animation:fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+
+    animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+
+    animation-duration:1s;
+    animation-delay: 0.5s
+}
+
+.fade-in2 {
+    animation-delay: 1s
+}
+
+.fade-in3 {    
+    animation-delay: 1.5s
+}
+
+
+/*Scale page to larger screen*/
 @media screen and (min-width: 1050px) {
 
     .container {
-        max-width:80%;
+        max-width:900px;
         margin: auto;
     }
     .card1 {
